@@ -1,0 +1,9 @@
+.title-color {
+    animation: title 4s infinite;
+}
+
+@keyframes title {
+    0% {color: rgb(95, 113, 139);}
+    50% {color: #8cc2a9;}
+    100% {color: rgb(95, 113, 139);}
+}

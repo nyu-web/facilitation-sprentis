@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/keyframes.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1 class="title-color">Keyframes</h1>
+					<h3>Spencer Prentiss</h3>
+				</section>
+				<section>
+					<h2>What?</h2>
+                    <ul>
+                        <li>ee</li>
+                        <li>ee</li>
+                        <li>ee</li>
+                    </ul>
+				</section>
+				<section>
+                    <h2>Why?</h2>
+                    <ul>
+                        <li>Adobe Flash is outdated</li>
+                        <li>JS can be complicated</li>
+                        <li>Put it right in the CSS</li>
+                    </ul>
+				</section>
+				<section>
+					<h2>Keyframes vs. JavaScript</h2>
+                    <p>(comparison of code performing same action)</p>
+				</section>
+				<section>
+					<h2>Title</h2>
+				</section>
+				<section>
+					<h2>Title</h2>
+				</section>
+				<section>
+					<h2>Title</h2>
+				</section>
+				<section>
+					<h2>Title</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
