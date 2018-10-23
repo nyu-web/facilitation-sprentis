@@ -2,8 +2,86 @@
     animation: title 4s infinite;
 }
 
+.move {
+    position :relative;
+    animation: movement 6s infinite;
+}
+
+.color {
+    animation: color-change 1.4s infinite alternate;
+}
+
+.shape {
+    position: relative;
+    background-color: #2aa198;
+    width: 200px;
+    height: 200px;
+    animation: shape-change 4s infinite;
+}
+
+.end {
+    position: relative;
+    animation: ending 10s infinite alternate;
+}
+
+.term {
+    color: #fb7434;
+    background-color: lightgray;
+}
+
+.tiny {
+    color: #dd4229;
+}
+
 @keyframes title {
     0% {color: rgb(95, 113, 139);}
     50% {color: #8cc2a9;}
     100% {color: rgb(95, 113, 139);}
+}
+
+@keyframes movement {
+    0% {top: 0; left: 0;}
+    25% {top: 150px; left: 150px;}
+    50% {top: 0; left: 0;}
+    75% {top: 150px; left: -150px;}
+    100% {top: 0; left: 0;}
+}
+
+@keyframes color-change {
+    0% {color: rgb(169, 53, 55);}
+    25% {color: #8164c2;}
+    50% {color: #58c29b;}
+    75% {color: rgb(211, 216, 81);}
+    100% {color: #A93537}
+}
+
+@keyframes shape-change {
+    0% {width: 200px; border-radius: 0;}
+    50% {height: 500px; width: 500px; border-radius: 50%;}
+    100% {height: 200px; width:200px; border-radius: 0;}
+}
+
+@keyframes ending {
+    0% {transform: rotate(0); color: #0D3349; top:0; left: 0; font-size: 60px;}
+    25% {transform: rotate(180deg); color: #d9d563; top:-80px left: 200px; font-size: 16px;}
+    50% {transform: rotate(-180deg); color: #af2728; top: 200px; left: -150px; font-size: 50px;}
+    75% {transform: rotate(90deg); color: #43d339; top:0; left: 0; font-size: 80px;}
+    100% {transform: rotate(-45deg); color: #c23cc4; top: 130px; left: 120px; font-size: 20px;}
+}
+
+
+
+
+/*--------little demo before last slide that I'm keeping separate for no real reason------ */
+.move2 {
+    width: 100px;
+    height: 100px;
+    background-color: #0D3349;
+    position: relative;
+    animation: movement2 4s infinite alternate;
+}
+
+@keyframes movement2 {
+    0% {top: 0}
+    100% {top: 100px}
 }
